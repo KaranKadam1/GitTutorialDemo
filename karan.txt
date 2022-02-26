@@ -1,0 +1,101 @@
+karan.kadam@IN-5CD80801LP MINGW64 ~/Documents/Git Tutorials (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+karan.kadam@IN-5CD80801LP MINGW64 ~/Documents/Git Tutorials (master)
+$ git remote
+
+karan.kadam@IN-5CD80801LP MINGW64 ~/Documents/Git Tutorials (master)
+$ git remote add origin https://github.com/KaranKadam1/GitTutorialDemo.git
+
+karan.kadam@IN-5CD80801LP MINGW64 ~/Documents/Git Tutorials (master)
+$ git remote
+origin
+
+karan.kadam@IN-5CD80801LP MINGW64 ~/Documents/Git Tutorials (master)
+$ git remote -v
+origin  https://github.com/KaranKadam1/GitTutorialDemo.git (fetch)
+origin  https://github.com/KaranKadam1/GitTutorialDemo.git (push)
+
+karan.kadam@IN-5CD80801LP MINGW64 ~/Documents/Git Tutorials (master)
+$ git push -u origin main
+error: src refspec main does not match any
+error: failed to push some refs to 'https://github.com/KaranKadam1/GitTutorialDemo.git
+
+karan.kadam@IN-5CD80801LP MINGW64 ~/Documents/Git Tutorials (master)
+$ $ ssh-keygen -t rsa -b 4096 -C "kadamkaran830@gmail.com"
+bash: $: command not found
+
+karan.kadam@IN-5CD80801LP MINGW64 ~/Documents/Git Tutorials (master)
+$ $ ssh-keygen -t rsa -b 4096 -C "kadamkaran12345@gmail.com"
+bash: $: command not found
+
+karan.kadam@IN-5CD80801LP MINGW64 ~/Documents/Git Tutorials (master)
+$ $ ssh-keygen -t ed25519 -C "kadamkaran830@gmail.com"
+bash: $: command not found
+
+karan.kadam@IN-5CD80801LP MINGW64 ~/Documents/Git Tutorials (master)
+$ $ ssh-keygen -t ed25519 -C "karan.kadam@calsoftinc.com"
+bash: $: command not found
+
+karan.kadam@IN-5CD80801LP MINGW64 ~/Documents/Git Tutorials (master)
+$ $ ssh-keygen -t ed25519 -C "kadamkaran838@gmail.com"
+bash: $: command not found
+
+karan.kadam@IN-5CD80801LP MINGW64 ~/Documents/Git Tutorials (master)
+$ $ ssh-keygen -t ed25519 -C "kadamkara
+
+karan.kadam@IN-5CD80801LP MINGW64 ~/Documents/Git Tutorials (master)
+$ ssh-keygen -t rsa -b 4096 -C "kadamkaran830@gmail.com"
+Generating public/private rsa key pair.
+Enter file in which to save the key (/c/Users/karan.kadam/.ssh/id_rsa):
+Created directory '/c/Users/karan.kadam/.ssh'.
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
+Your identification has been saved in /c/Users/karan.kadam/.ssh/id_rsa
+Your public key has been saved in /c/Users/karan.kadam/.ssh/id_rsa.pub
+The key fingerprint is:
+SHA256:7QoHO1Crhgt038zDvzk6dfW7pyDCPmpqrzAC/dXZWoE kadamkaran830@gmail.com
+The key's randomart image is:
++---[RSA 4096]----+
+|                 |
+|         .       |
+|      . E .      |
+| .   . o + . .   |
+|..... + S + . .  |
+|o .o.+=+ = .   . |
+
+
+
+karan.kadam@IN-5CD80801LP MINGW64 ~/Documents/Git Tutorials (master)
+$ eval "$(ssh-agent -s)"
+Agent pid 2094
+
+karan.kadam@IN-5CD80801LP MINGW64 ~/Documents/Git Tutorials (master)
+$ ssh-add ~/.ssh/id_ed25519
+/c/Users/karan.kadam/.ssh/id_ed25519: No such file or directory
+
+karan.kadam@IN-5CD80801LP MINGW64 ~/Documents/Git Tutorials (master)
+$ tail ~/.ssh/id_ed25519.pub
+tail: cannot open '/c/Users/karan.kadam/.ssh/id_ed25519.pub' for reading: No such file or directory
+
+karan.kadam@IN-5CD80801LP MINGW64 ~/Documents/Git Tutorials (master)
+$ tail ~/.ssh/id_rsa.pub
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQC4AqveYuVbeF9YB2xpWnN1wiGCqp0ZQf2lPbAMn1a++dJleoONK1WlM3HhesHmTL7c4AgU78OybKmkn7JbmgzhSMR+N27lj6duMCLUeC3Ux29ibhg3C3h8G1oVBiRv6FdBfa+K5Vv7tF1sxIF6DYdNuu76XSzvxzHZrOZTKj6qJLcb7VrCn7MiTV3nYAZCBHq24oR2V7XT0oq5qjSCPthdvBB8lxJv7ZD20BF6cbHeCcoVQXGC4pUoEGs6RkqOzfIKNIAER4Z/bNLNSOEAR5YcNec0BEq7VWbYHucyKCOvxS0tyeZClO8rcjgChlwIU7Zw2RQqy6/dmZHYavmEyGEFaiAWsrJVlPjE85f65TqHD44hh0v6rxR27aU1jks6ntSIeKTwcOGRoDv2eXEUn4Xw9V6yBr18sjRMOYBN8FGFPoh6CIZG2nlbh3Vi9IFWg5aAASzLAtG4ORydLT/IrTOU8DY7+HoXrTQhdyLEbITzMhd6hvJScah5BMz0peRWVOAJRlC1ZBBt9T3ZSUB3IAZhJt6WnK7bvtu4mA32XbfUYnafnQR/MxNhePdkmjhVyg76ELCJDflI6UgqxczU+fomB+fx+YOOG7HWSSmVGq++3BXb0sNhQVyr4ZjhDMDqKkkgfFWlUAF9YXsJSVy5lXEchHjDx5vvslOEEX8aQjIkNw== kadamkaran830@gmail.com
+
+
+
+karan.kadam@IN-5CD80801LP MINGW64 ~/Documents/Git Tutorials (master)
+$ git push -u origin master
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (7/7), 6.80 KiB | 2.27 MiB/s, done.
+Total 7 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/KaranKadam1/GitTutorialDemo.git
+ * [new branch]      master -> master
+branch 'master' set up to track 'origin/master
+
+
